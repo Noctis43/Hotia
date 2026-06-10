@@ -12,9 +12,9 @@ public class Profil {
     private BigDecimal latitude;
     private BigDecimal longitude;
 
-    public Profile() {}
+    public Profil() {}
 
-    public Profile(int id, int utilisateurId, String telephone, String bio, Integer villeId, BigDecimal latitude, BigDecimal longitude) {
+    public Profil(int id, int utilisateurId, String telephone, String bio, Integer villeId, BigDecimal latitude, BigDecimal longitude) {
         this.id = id;
         this.utilisateurId = utilisateurId;
         this.telephone = telephone;
