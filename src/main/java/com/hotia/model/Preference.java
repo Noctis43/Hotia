@@ -13,8 +13,8 @@ public class Preference {
     private String typeRelation;
     private Integer ageMin;
     private Integer ageMax;
-    private Liste<String> divertissements;
-    private Liste<String> comportements;
+    private List<String> divertissements;
+    private List<String> comportements;
 
     public Preference() {
         this.divertissements = new ArrayList<>();
