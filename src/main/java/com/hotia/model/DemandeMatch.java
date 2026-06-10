@@ -5,7 +5,7 @@ import java.time.LocalDateTime;
 public class DemandeMatch {
 
     private int id;
-    private int demandeId;
+    private int demandeurId;
     private int cibleId;
     private String statut;
     private LocalDateTime dateDemande;
