@@ -7,7 +7,7 @@ public class Photo {
     private int id;
     private int utilisateurId;
     private String chemin;
-    private boolean estPrincipale;
+    private int estPrincipale;
     private LocalDateTime dateUpload;
 
     public Photo() {}
