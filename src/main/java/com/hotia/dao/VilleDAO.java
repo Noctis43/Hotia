@@ -12,7 +12,7 @@ import java.util.List;
 
 public class VilleDAO {
 
-    private Vile mapVille(ResultSet rs) throws SQLException {
+    private Ville mapVille(ResultSet rs) throws SQLException {
 
         Ville v = new Ville();
         v.setId(rs.getInt("id"));
@@ -26,10 +26,10 @@ public class VilleDAO {
     public List<Ville> trouverToutes() throws SQLException {
 
         String sql = "SELECT * FROM villes ORDER BY nom";
-        List<ville> liste = new ArrayList<>();
+        List<Ville> liste = new ArrayList<>();
 
         try (Connection conn = DBConnection.getConnection();
-             PreparedStatement ps = conn.PreparedStatement(sql);
+             PreparedStatement ps = conn.prepareStatement(sql);
              ResultSet rs = ps.executeQuery()) {
                 while (rs.next()) {
                     liste.add(mapVille(rs));
@@ -44,7 +44,7 @@ public class VilleDAO {
         String sql = "SELECT * FROM villes WHERE id = ?";
 
         try (Connection conn = DBConnection.getConnection();
-             PreparedStatement ps = conn.preparedStatement(sql)) {
+             PreparedStatement ps = conn.prepareStatement(sql)) {
                 ps.setInt(1, id);
                 try (ResultSet rs = ps.executeQuery()) {
                     if (rs.next()) {
