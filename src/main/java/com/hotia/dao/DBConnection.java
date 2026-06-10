@@ -15,8 +15,8 @@ public final class DBConnection {
     public static Connection getConnection() throws SQLException {
 
         try {
-            class.forName("com.mysql.cj.jdbc.Driver");
-        } catch (ClassNotFoundExeption e) {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+        } catch (ClassNotFoundException e) {
             throw new SQLException("Driver MySQl introuvable !!", e);
         }
 
