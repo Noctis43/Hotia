@@ -16,6 +16,7 @@ public class PhotoDAO {
 
 
     private Photo mapPhoto(ResultSet rs) throws SQLException {
+        
         Photo p = new Photo();
         p.setId(rs.getInt("id"));
         p.setUtilisateurId(rs.getInt("utilisateur_id"));
