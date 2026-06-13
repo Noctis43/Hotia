@@ -23,7 +23,7 @@ public class MessageServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        if (ServletUtil.redirigereSiNonConnect(req, resp)) {
+        if (ServletUtil.redirigerSiNonConnecte(req, resp)) {
             return;
         }
 
