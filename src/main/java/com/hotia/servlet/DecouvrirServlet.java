@@ -27,7 +27,7 @@ public class DecouvrirServlet extends HttpServlet {
 
         Utilisateur utilisateur = ServletUtil.getUtilisateurConnecte(req);
 
-        if (utilisateur.getProfilComplet != 1) {
+        if (utilisateur.getProfileComplet() != 1) {
             resp.sendRedirect(req.getContextPath() + "/onboarding");
             return;
         }
@@ -38,7 +38,7 @@ public class DecouvrirServlet extends HttpServlet {
             } else {
                 HttpSession session = req.getSession();
                 Set<Integer> cartesVues = ServletUtil.getCartesVues(session);
-                DecouvrirService.CandidatCarte condidat = decouvrirService.trouverProchainCandidat(utilisateur.getId(), cartesVues);
+                DecouvrirService.CandidatCarte candidat = decouvrirService.trouverProchainCandidat(utilisateur.getId(), cartesVues);
                 req.setAttribute("candidat", candidat);
             }
             req.getRequestDispatcher("jsp/decouvrir/decouvrir.jsp").forward(req, resp);
