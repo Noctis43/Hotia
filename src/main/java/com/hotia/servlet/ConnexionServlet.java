@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.sql.SQLException;
 
 @WebServlet("/connexion")
-public class ConnexionServelet extends HttpServlet {
+public class ConnexionServlet extends HttpServlet {
 
     private final AuthService authService = new AuthService();
 
