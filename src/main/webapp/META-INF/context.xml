@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context allowCasualMultipartParsing="true" maxPostSize="-1" maxPartCount="200">
+    <Manager pathname=""/>
+</Context>
