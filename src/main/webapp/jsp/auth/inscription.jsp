@@ -6,7 +6,17 @@
 </jsp:include>
 
 <div class="auth-layout">
-    
+    <div class="auth-hero">
+        <h1>Rejoignez la <em>communauté</em> HoTia</h1>
+        <p>Créez votre espace en quelques minutes. Chaque profil est pensé pour des rencontres authentiques, ancrées dans l'île.</p>
+        <div class="auth-stats">
+            <div class="auth-stat">
+                <strong>18+</strong>
+                <span>Âge minimum</span>
+            </div>
+           
+        </div>
+    </div>
 
     <section class="card auth-card">
         <h2>Créer un compte</h2>
