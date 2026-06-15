@@ -5,7 +5,21 @@
     <jsp:param name="theme" value="auth"/>
 </jsp:include>
 
-
+<div class="auth-layout">
+    <div class="auth-hero">
+        <h1>Où les chemins de <em>Madagascar</em> se rencontrent</h1>
+        <p>HoTia révèle les affinités qui comptent — proximité, passions partagées, intentions sincères.</p>
+        <div class="auth-stats">
+            <div class="auth-stat">
+                <strong>10</strong>
+                <span>Villes</span>
+            </div>
+            <div class="auth-stat">
+                <strong>6</strong>
+                <span>Critères</span>
+            </div>
+        </div>
+    </div>
 
     <section class="card auth-card">
         <h2>Connexion</h2>
