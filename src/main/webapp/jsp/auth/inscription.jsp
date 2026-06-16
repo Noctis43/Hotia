@@ -14,7 +14,6 @@
                 <strong>18+</strong>
                 <span>Âge minimum</span>
             </div>
-           
         </div>
     </div>
 
