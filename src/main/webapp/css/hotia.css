@@ -1247,3 +1247,43 @@ legend {
     border: none;
     background: transparent;
 }
+
+.site-footer {
+    padding: var(--space-6) 0;
+    border-top: 1px solid rgba(26, 21, 32, 0.06);
+    margin-top: var(--space-8);
+}
+
+.theme-auth .site-footer {
+    border-top-color: rgba(199, 61, 101, 0.12);
+}
+
+.footer-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.theme-auth .footer-brand {
+    color: #2a1a22;
+}
+
+.theme-auth .footer-copy {
+    color: var(--text-secondary);
+}
+
+.footer-copy {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
