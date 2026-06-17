@@ -1170,3 +1170,25 @@ legend {
     border-color: var(--accent-coral);
     box-shadow: 0 0 0 3px rgba(224, 99, 75, 0.15);
 }
+
+.separation-panel {
+    max-width: 560px;
+    margin-inline: auto;
+}
+
+.separation-intro {
+    font-size: 1.05rem;
+    margin-bottom: var(--space-5);
+}
+
+.separation-intro strong {
+    color: var(--accent-coral);
+}
+
+.separation-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    margin-top: var(--space-5);
+}
+
