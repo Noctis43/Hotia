@@ -1083,3 +1083,90 @@ legend {
     flex-wrap: wrap;
     gap: var(--space-3);
 }
+
+.chat-section {
+    max-width: 680px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 480px;
+}
+
+.chat-messages {
+    flex: 1;
+    min-height: 320px;
+    max-height: 52vh;
+    overflow-y: auto;
+    padding: var(--space-5);
+    margin-bottom: var(--space-4);
+    background: rgba(255, 255, 255, 0.55);
+    border: 1px solid rgba(26, 21, 32, 0.06);
+    border-radius: var(--radius-lg);
+    scroll-behavior: smooth;
+}
+
+.message {
+    margin-bottom: var(--space-4);
+    max-width: 82%;
+    animation: msg-in var(--duration-base) var(--ease-out) both;
+}
+
+@keyframes msg-in {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.message-moi {
+    margin-left: auto;
+    text-align: right;
+}
+
+.message-contenu {
+    display: inline-block;
+    padding: var(--space-3) var(--space-4);
+    border-radius: var(--radius-lg) var(--radius-lg) var(--radius-sm) var(--radius-lg);
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(10, 14, 26, 0.06);
+    text-align: left;
+}
+
+.message-moi .message-contenu {
+    background: linear-gradient(135deg, var(--accent-coral), var(--accent-coral-deep));
+    color: #fff;
+    border-radius: var(--radius-lg) var(--radius-lg) var(--radius-lg) var(--radius-sm);
+}
+
+.message-date {
+    display: block;
+    margin-top: var(--space-1);
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+}
+
+.chat-form {
+    display: flex;
+    gap: var(--space-3);
+    align-items: flex-end;
+    padding: var(--space-4);
+    background: var(--surface-card);
+    border: 1px solid rgba(26, 21, 32, 0.08);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-soft);
+}
+
+.chat-form textarea {
+    flex: 1;
+    min-height: 52px;
+    padding: var(--space-3) var(--space-4);
+    border: 1px solid rgba(26, 21, 32, 0.1);
+    border-radius: var(--radius-md);
+    font-family: var(--font-ui);
+    font-size: 1rem;
+    resize: none;
+}
+
+.chat-form textarea:focus {
+    outline: none;
+    border-color: var(--accent-coral);
+    box-shadow: 0 0 0 3px rgba(224, 99, 75, 0.15);
+}
