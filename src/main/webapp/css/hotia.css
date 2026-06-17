@@ -517,3 +517,152 @@ body.hotia-body {
     color: var(--accent-coral);
     border-bottom-color: var(--accent-coral);
 }
+
+.form-grid,
+.form-sections {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+.form-grid label,
+.form-sections label,
+.field-label {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.form-grid input,
+.form-grid select,
+.form-grid textarea,
+.form-sections input,
+.form-sections select,
+.form-sections textarea {
+    width: 100%;
+    min-height: 48px;
+    padding: var(--space-3) var(--space-4);
+    font-family: var(--font-ui);
+    font-size: 1rem;
+    color: var(--text-primary);
+    background: #fff;
+    border: 1px solid rgba(26, 21, 32, 0.12);
+    border-radius: var(--radius-md);
+    transition: border-color var(--duration-fast), box-shadow var(--duration-fast);
+}
+
+.theme-auth .form-grid input,
+.theme-auth .form-grid select,
+.theme-auth .form-grid textarea {
+    background: #ffffff;
+    border-color: rgba(199, 61, 101, 0.22);
+    color: var(--text-primary);
+}
+
+.theme-auth .auth-card .form-grid input,
+.theme-auth .auth-card .form-grid select,
+.theme-auth .auth-card .form-grid textarea {
+    background: #ffffff;
+    border: 1.5px solid rgba(199, 61, 101, 0.22);
+    color: var(--text-primary);
+    font-size: 1.0625rem;
+    color-scheme: light;
+}
+
+.theme-auth .auth-card .form-grid input::placeholder {
+    color: #9a8a92;
+    opacity: 1;
+}
+
+.theme-auth .auth-card .form-grid input:hover,
+.theme-auth .auth-card .form-grid select:hover {
+    border-color: rgba(199, 61, 101, 0.4);
+}
+
+.theme-auth .auth-card .form-grid input:focus,
+.theme-auth .auth-card .form-grid select:focus,
+.theme-auth .auth-card .form-grid textarea:focus {
+    border-color: var(--accent-coral);
+    box-shadow: 0 0 0 3px rgba(228, 85, 125, 0.22);
+}
+
+.theme-auth .auth-card .alert-error {
+    background: rgba(201, 61, 61, 0.08);
+    color: #8f2e2e;
+    border-color: rgba(201, 61, 61, 0.25);
+}
+
+.form-grid input:focus,
+.form-grid select:focus,
+.form-grid textarea:focus,
+.form-sections input:focus,
+.form-sections select:focus,
+.form-sections textarea:focus {
+    outline: none;
+    border-color: var(--accent-coral);
+    box-shadow: 0 0 0 3px rgba(228, 85, 125, 0.22);
+}
+
+.form-grid textarea,
+.form-sections textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+fieldset {
+    border: 1px solid rgba(26, 21, 32, 0.08);
+    border-radius: var(--radius-md);
+    padding: var(--space-5);
+    margin: 0;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+legend {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 0 var(--space-2);
+}
+
+.checkbox-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: var(--space-2);
+    margin: var(--space-3) 0 var(--space-4);
+}
+
+.checkbox-grid label {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--space-3);
+    font-weight: 400;
+    font-size: 0.9rem;
+    padding: var(--space-2) var(--space-3);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: background var(--duration-fast);
+}
+
+.checkbox-grid label:hover {
+    background: rgba(224, 99, 75, 0.08);
+}
+
+.checkbox-grid input[type="checkbox"] {
+    width: 1.125rem;
+    height: 1.125rem;
+    min-height: auto;
+    accent-color: var(--accent-coral);
+}
+
+.row-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-4);
+}
+
+@media (max-width: 520px) {
+    .row-2 { grid-template-columns: 1fr; }
+}
