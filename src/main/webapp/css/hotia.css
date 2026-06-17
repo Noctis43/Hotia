@@ -361,3 +361,26 @@ body.hotia-body {
 }
 
 .theme-auth .page-head .page-lead { color: var(--text-secondary); }
+
+.card {
+    background: var(--surface-card);
+    border: 1px solid rgba(26, 21, 32, 0.06);
+    border-radius: var(--radius-lg);
+    padding: var(--space-6);
+    box-shadow: var(--shadow-soft);
+    backdrop-filter: blur(8px);
+}
+
+.theme-auth .card {
+    background: #ffffff;
+    border: 1px solid rgba(199, 61, 101, 0.14);
+    box-shadow: var(--shadow-soft);
+    color: var(--text-primary);
+}
+
+.theme-auth .card.auth-card {
+    background: #ffffff;
+    border: 1px solid rgba(228, 85, 125, 0.18);
+    box-shadow: var(--shadow-card);
+    color: var(--text-primary);
+}
