@@ -1287,3 +1287,15 @@ legend {
     font-size: 0.85rem;
     color: var(--text-secondary);
 }
+
+.erreur-card {
+    max-width: 480px;
+    margin: var(--space-8) auto;
+    text-align: center;
+}
+
+.erreur-card h1 {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    margin-bottom: var(--space-4);
+}
