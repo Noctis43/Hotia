@@ -148,3 +148,22 @@ body.hotia-body {
     opacity: 0.04;
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
+
+.theme-auth {
+    background: linear-gradient(165deg, #fff5f8 0%, #f8ebe8 45%, #f3e4e8 100%);
+    color: var(--text-primary);
+}
+
+.theme-auth .ambient-orb--a {
+    opacity: 0.35;
+    background: radial-gradient(circle, rgba(228, 85, 125, 0.22), transparent 70%);
+}
+
+.theme-auth .ambient-orb--b {
+    opacity: 0.3;
+    background: radial-gradient(circle, rgba(232, 160, 180, 0.2), transparent 70%);
+}
+
+.theme-discover {
+    background: linear-gradient(180deg, var(--surface-cream) 0%, #ebe2d6 100%);
+}
