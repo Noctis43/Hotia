@@ -1299,3 +1299,59 @@ legend {
     font-size: 2rem;
     margin-bottom: var(--space-4);
 }
+
+@media (max-width: 768px) {
+    .nav-toggle { display: flex; color: inherit; }
+
+    .nav-main {
+        position: fixed;
+        top: var(--header-h);
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: stretch;
+        padding: var(--space-4);
+        background: var(--surface-glass);
+        backdrop-filter: blur(20px);
+        border-bottom: 1px solid var(--surface-glass-border);
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: transform var(--duration-base) var(--ease-out),
+                    opacity var(--duration-base),
+                    visibility var(--duration-base);
+    }
+
+    .theme-auth .nav-main,
+    .theme-discover .nav-main,
+    .theme-app .nav-main,
+    .theme-form .nav-main {
+        background: rgba(255, 248, 250, 0.98);
+    }
+
+    .nav-main.is-open {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-link {
+        padding: var(--space-3) var(--space-4);
+        border-radius: var(--radius-md);
+    }
+
+    .brand-tag { display: none; }
+}
+
+@media (max-width: 520px) {
+    .demande-card {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .demande-photo {
+        margin-inline: auto;
+    }
+
+    .demande-actions { justify-content: center; }
+}
